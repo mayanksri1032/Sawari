@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functions.DropActivity">
+
+    <!-- Container for Fragments -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/foryou"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/lightBackground"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center_horizontal"
+            android:text="For You"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arroww" />
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.search.SearchBar
+                android:id="@+id/location1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBackground"
+                android:hint="Current Location"
+                app:titleTextColor="@color/background" />
+
+            <com.google.android.material.search.SearchBar
+                android:id="@+id/location2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="@color/lightBackground"
+                android:hint="Destination"
+                app:titleTextColor="@color/background" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:showDividers="middle"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>
