@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp"
     android:padding="16dp"
     tools:context=".DetailsActivity">
 
     <TextView
+        android:layout_marginTop="20pt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Personal Details"

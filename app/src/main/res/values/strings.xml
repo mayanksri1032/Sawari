@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sawari</string>
+    <string name="sawari">Sawari</string>
+    <string name="enter_your_number">Enter Your Number</string>
+    <string name="_91">+91</string>
+    <string name="enter_your_number_to_proceed">Enter your number to proceed</string>
+    <string name="next">Next</string>
+    <string name="_00000_00000">00000 00000</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+</resources>

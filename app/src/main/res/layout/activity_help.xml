@@ -12,50 +12,80 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:id="@+id/lll">
+        android:id="@+id/lll"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
 
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/foryou"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginLeft="270dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/lightBackground"
-            android:orientation="horizontal"
-            app:cardCornerRadius="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/arrow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:backgroundTint="@color/white"
-                android:gravity="center_horizontal"
-                android:text="For You"
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:layout_marginTop="14dp"
+                android:text="Menu"
+                android:layout_marginStart="65dp"/>
 
-            <ImageView
-                android:layout_width="19dp"
-                android:layout_height="25dp"
-                android:layout_marginLeft="83dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/arroww" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/lightBackground"
+                android:orientation="horizontal"
+                app:cardCornerRadius="20dp">
 
-        </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/lightBackground"
+                    android:gravity="center_horizontal"
+                    android:text="Ticket"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/tickt" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </LinearLayout>
 
 
 
     <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/lll"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/white_background"
         android:elevation="5dp"
+        android:layout_marginTop="40dp"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
@@ -75,16 +105,16 @@
                 android:id="@+id/help"
                 android:gravity="center_vertical">
 
-                <pl.droidsonroids.gif.GifImageView
+                <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/helpdesk" />
+                    android:src="@drawable/sands" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Help"
+                    android:text="Safety And Security"
                     android:padding="20dp"
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground"/>
@@ -100,12 +130,12 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/payment" />
+                    android:src="@drawable/randb" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Payment"
+                    android:text="Rides And Billing"
                     android:padding="20dp"
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground"/>
@@ -121,12 +151,12 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/rides" />
+                    android:src="@drawable/services" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Rides"
+                    android:text="Services"
                     android:padding="20dp"
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground"/>
@@ -143,12 +173,12 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/safety" />
+                    android:src="@drawable/refferals" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Safety"
+                    android:text="Account And App"
                     android:padding="20dp"
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground"/>
@@ -165,12 +195,12 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/referandearn" />
+                    android:src="@drawable/refferals" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Refer And Earn"
+                    android:text="Referrals"
                     android:padding="20dp"
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground"/>
@@ -186,13 +216,13 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/medal" />
+                    android:src="@drawable/pandw" />
 
                 <TextView
                     android:id="@id/rewards"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="My Rewards"
+                    android:text="Payment And Wallet"
                     android:padding="20dp"
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground"/>
@@ -209,42 +239,18 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/claims" />
+                    android:src="@drawable/pandp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Claim"
+                    android:text="Power Pass"
                     android:padding="20dp"
                     android:gravity="center_vertical"
                     android:background="?attr/selectableItemBackground"/>
             </LinearLayout>
-            <LinearLayout
-                android:id="@+id/notifications"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
 
-                <pl.droidsonroids.gif.GifImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/notifications" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Notification"
-                    android:padding="20dp"
-                    android:gravity="center_vertical"
-                    android:background="?attr/selectableItemBackground"/>
-            </LinearLayout>
         </LinearLayout>
-
-    </LinearLayout>
-
-
     </LinearLayout>
 
 

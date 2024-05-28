@@ -15,15 +15,4 @@
         <item name="android:textColorSecondary">@color/lightBackground</item>
     </style>
 
-    <!-- Dark theme -->
-    <style name="AppTheme.Dark" parent="Theme.AppCompat">
-        <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryDark">@color/lightBackground</item>
-        <item name="colorAccent">@color/green</item>
-        <item name="android:windowBackground">@color/black</item>
-        <item name="android:textColorPrimary">@color/white</item>
-        <item name="android:textColorSecondary">@color/blue</item>
-        <item name="android:navigationBarColor">@color/black</item>
-        <item name="android:statusBarColor">@color/lightBackground</item>
-    </style>
 </resources>

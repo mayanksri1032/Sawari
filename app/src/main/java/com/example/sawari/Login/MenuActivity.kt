@@ -37,8 +37,7 @@ class MenuActivity : AppCompatActivity() {
 
         loadUserDetails()
 
-        val profileActivityImageView: ImageView = findViewById(R.id.profactivity)
-        val backImageView: ImageView = findViewById(R.id.back)
+        val profileLayout = findViewById<LinearLayout>(R.id.profactivity)
         val helpLayout = findViewById<LinearLayout>(R.id.help)
         val paymentLayout = findViewById<LinearLayout>(R.id.payment)
         val ridesLayout = findViewById<LinearLayout>(R.id.rides)
@@ -48,14 +47,8 @@ class MenuActivity : AppCompatActivity() {
         val claimsLayout = findViewById<LinearLayout>(R.id.claims)
         val notificationsLayout = findViewById<LinearLayout>(R.id.notifications)
 
-        profileActivityImageView.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
-            startActivity(intent)
-        }
-
-        backImageView.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+        profileLayout.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
 
         helpLayout.setOnClickListener {

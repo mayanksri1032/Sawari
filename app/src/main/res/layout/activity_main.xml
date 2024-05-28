@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/menuactivity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/menu" />
+
+        <com.google.android.material.search.SearchBar
+            android:layout_width="330dp"
+            android:id="@+id/locationsearch1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/lightBackground"
+            android:hint="Fetching Your Location..."
+            android:paddingStart="10dp"
+            app:titleTextColor="@color/background">
+
+        </com.google.android.material.search.SearchBar>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout">
+
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/two" />
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <com.google.android.material.search.SearchBar
+                    android:layout_width="match_parent"
+                    android:id="@+id/locationSearch2"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lightBackground"
+                    android:hint="Where you want to go ?"
+                    app:titleTextColor="@color/background"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bgs">
+
+                    <ImageView
+                        android:id="@+id/car"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/carl" />
+
+                </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bikecard"
+                    android:layout_marginStart="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bgs">
+
+                        <ImageView
+                            android:id="@+id/bike"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/motorcycle" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/autocard"
+                    android:layout_marginStart="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="60dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bgs">
+
+                        <ImageView
+                            android:id="@id/auto"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/rickshaw" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387179982356",
+    "project_id": "sawari-a3a2a",
+    "storage_bucket": "sawari-a3a2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387179982356:android:16c2cb4ab41fa85677c101",
+        "android_client_info": {
+          "package_name": "com.example.sawari"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqGGci0VpKgHeiLojDdR1f-525Td9A2kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
