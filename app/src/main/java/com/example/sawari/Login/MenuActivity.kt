@@ -2,19 +2,20 @@ package com.example.sawari.Login
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.sawari.ClaimActivity
-import com.example.sawari.MainActivity
-import com.example.sawari.NotificationActivity
-import com.example.sawari.ProfileActivity
+import com.example.sawari.menu.ClaimActivity
+import com.example.sawari.menu.NotificationActivity
+import com.example.sawari.menu.ProfileActivity
 import com.example.sawari.R
-import com.example.sawari.RAEActivity
-import com.example.sawari.RewardActivity
-import com.example.sawari.SafetyActivity
+import com.example.sawari.menu.RAEActivity
+import com.example.sawari.menu.RewardActivity
+import com.example.sawari.menu.SafetyActivity
+import com.example.sawari.menu.HelpActivity
+import com.example.sawari.menu.PaymentActivity
+import com.example.sawari.menu.RideActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 

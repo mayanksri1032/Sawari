@@ -1,4 +1,4 @@
-package com.example.sawari
+package com.example.sawari.functions
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.sawari.Login.MenuActivity
-import com.example.sawari.functions.DropActivity
+import com.example.sawari.R
 
 class MainActivity : AppCompatActivity() {
 
