@@ -1,4 +1,4 @@
-package com.example.sawari
+package com.example.sawari.menu
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sawari.Login.LoginActivity
 import com.example.sawari.Login.MenuActivity
+import com.example.sawari.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 

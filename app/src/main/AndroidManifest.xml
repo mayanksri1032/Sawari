@@ -16,58 +16,58 @@
         android:theme="@style/Theme.Sawari"
         tools:targetApi="31">
         <activity
-            android:name=".functions.TicketActivity"
+            android:name=".help.TicketActivity"
             android:exported="false" />
         <activity
             android:name=".functions.DropActivity"
             android:exported="false" />
         <activity
-            android:name=".functions.ForyouActivity"
+            android:name=".functions.ForyouFragment"
             android:exported="false" />
         <activity
-            android:name=".NotificationActivity"
+            android:name=".menu.NotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".ClaimActivity"
+            android:name=".menu.ClaimActivity"
             android:exported="false" />
         <activity
-            android:name=".RewardActivity"
+            android:name=".menu.RewardActivity"
             android:exported="false" />
         <activity
-            android:name=".RAEActivity"
+            android:name=".menu.RAEActivity"
             android:exported="false" />
         <activity
-            android:name=".SafetyActivity"
+            android:name=".menu.SafetyActivity"
             android:exported="false" />
         <activity
-            android:name=".Login.RideActivity"
+            android:name=".menu.RideActivity"
             android:exported="false" />
         <activity
-            android:name=".Login.PaymentActivity"
+            android:name=".menu.PaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".Login.HelpActivity"
+            android:name=".menu.HelpActivity"
             android:exported="false" />
         <activity
             android:name=".Login.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".menu.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailsActivity"
+            android:name=".Login.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".LocationActivity"
+            android:name=".Login.LocationActivity"
             android:exported="false" />
         <activity
             android:name=".Login.OTPActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".functions.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".functions.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>

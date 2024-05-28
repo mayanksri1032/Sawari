@@ -6,7 +6,7 @@
     android:layout_gravity="center"
     android:layout_height="match_parent"
     android:background="@color/lightBackground"
-    tools:context=".LocationActivity">
+    tools:context=".Login.LocationActivity">
 
     <LinearLayout
         android:layout_width="355dp"

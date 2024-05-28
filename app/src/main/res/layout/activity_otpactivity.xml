@@ -56,15 +56,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/red"
-        android:text="SIGN IN" />
+        android:text="Sign In" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sendOtpButton"
-        android:text="Send OTP"
-        android:visibility="gone"
+        android:text="Resend OTP"
+        android:backgroundTint="@color/lightBackground"
         android:layout_marginTop="50dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/red"/>
+        android:textColor="@color/background"/>
 </LinearLayout>

@@ -7,7 +7,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.sawari.MainActivity
+import com.example.sawari.functions.MainActivity
 import com.example.sawari.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
