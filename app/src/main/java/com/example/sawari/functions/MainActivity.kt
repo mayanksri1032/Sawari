@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private var gmap: GoogleMap? = null
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var currentLocationText: EditText
+    private lateinit var dropLocationText: EditText
     private var currentMarker: Marker? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val profActivityImageView: ImageView = findViewById(R.id.menuactivity)
         currentLocationText = findViewById(R.id.currentlocationtext)
+        dropLocationText = findViewById(R.id.droplocation)
 
         profActivityImageView.setOnClickListener {
             val intent = Intent(this, MenuActivity::class.java)
@@ -54,7 +56,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         val bikecard: CardView = findViewById(R.id.bikecard)
         val carcard: CardView = findViewById(R.id.carcard)
         val materialCardView: MaterialCardView = findViewById(R.id.materialCardView)
-        val materialCardView2: MaterialCardView = findViewById(R.id.materialCardView2)
+        val materialCard: MaterialCardView = findViewById(R.id.materialCard)
 
         autocard.setOnClickListener {
             val intent = Intent(this, DropActivity::class.java)
@@ -76,8 +78,20 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             startActivity(intent)
         }
 
-        materialCardView2.setOnClickListener {
+        materialCard.setOnClickListener {
             val intent = Intent(this, DropActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Add the listener for the dropLocationText
+        dropLocationText.setOnClickListener {
+            val intent = Intent(this, DropActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Add the listener for the currentLocationText
+        currentLocationText.setOnClickListener {
+            val intent = Intent(this, PickupActivity::class.java)
             startActivity(intent)
         }
 
@@ -144,6 +158,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
+
+
     private fun getAddressFromLatLng(latitude: Double, longitude: Double): String {
         val geocoder = Geocoder(this, Locale.getDefault())
         val addresses = geocoder.getFromLocation(latitude, longitude, 1)
@@ -154,4 +170,5 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             "Address not found"
         }
     }
+
 }

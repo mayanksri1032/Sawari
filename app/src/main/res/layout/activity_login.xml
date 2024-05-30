@@ -8,6 +8,10 @@
     android:layout_height="match_parent"
     tools:context=".Login.LoginActivity">
 
+
+
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -95,14 +99,18 @@
             android:hint="@string/_00000_00000"/>
     </RelativeLayout>
 
+
+
     <Button
         android:layout_width="356dp"
         android:layout_height="64dp"
         android:textSize="20sp"
+        android:layout_marginTop="450dp"
         android:id="@+id/buttonNext"
-        android:layout_marginTop="400dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/blue"
         android:text="@string/next"
         android:textColor="@color/white" />
+
+
 </LinearLayout>
