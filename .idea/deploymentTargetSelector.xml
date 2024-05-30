@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="Sawari">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-05-26T12:38:52.271761800Z">
+        <DropdownSelection timestamp="2024-05-30T14:43:29.901506600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=103223135K112900" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\DELL\.android\avd\Pixel_7_Pro_API_30.avd" />
             </handle>
           </Target>
         </DropdownSelection>

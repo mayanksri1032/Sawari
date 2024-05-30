@@ -39,12 +39,13 @@ android {
 }
 
 dependencies {
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.google.firebase.auth)
+    implementation platform(libs.firebase.bom)
+    implementation libs.google.firebase.auth
     implementation libs.androidx.core.splashscreen
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.material
+    implementation libs.play.services.maps
     implementation libs.android.gif.drawable
     implementation libs.androidx.activity
     implementation libs.androidx.constraintlayout

@@ -65,7 +65,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/img_2" />
+                android:src="@drawable/user" />
 
             <TextView
                 android:id="@id/help"
@@ -121,7 +121,7 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/img_1" />
+                android:src="@drawable/info" />
 
             <TextView
                 android:id="@+id/info_message"
@@ -140,7 +140,7 @@
         <!-- Done button -->
         <Button
             android:id="@+id/done_button"
-            android:layout_width="320dp"
+            android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_gravity="bottom|center"
             android:layout_marginBottom="10dp"

@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".functions.MainActivity">
@@ -20,21 +21,48 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="15dp"
             android:src="@drawable/menu" />
 
-        <com.google.android.material.search.SearchBar
-            android:layout_width="330dp"
-            android:id="@+id/locationsearch1"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="24dp"
-            android:backgroundTint="@color/lightBackground"
-            android:hint="Fetching Your Location..."
-            android:paddingStart="10dp"
-            app:titleTextColor="@color/background">
+        <com.google.android.material.card.MaterialCardView
 
-        </com.google.android.material.search.SearchBar>
+            android:id="@+id/materialCardView"
+            android:layout_marginTop="15dp"
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginStart="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+
+            <EditText
+                android:id="@+id/currentlocationtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:hint="Your Current Location"
+                android:padding="10dp"
+                android:layout_marginStart="40dp"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:backgroundTint="@color/white"
+                android:id="@+id/ycl"
+                android:layout_gravity="center_vertical"
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/greenlocation"/>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
 
     </RelativeLayout>
 
@@ -45,11 +73,12 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@id/linearLayout">
 
-        <ImageView
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/maps"
+            android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/two" />
+            android:layout_height="300dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
     </LinearLayout>
 
@@ -61,13 +90,40 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-                <com.google.android.material.search.SearchBar
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/materialCardView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="8dp"
+                app:cardCornerRadius="30dp"
+                android:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <EditText
+                    android:id="@+id/droplocation"
                     android:layout_width="match_parent"
-                    android:id="@+id/locationSearch2"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/lightBackground"
-                    android:hint="Where you want to go ?"
-                    app:titleTextColor="@color/background"/>
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:background="@android:color/white"
+                    android:hint="Where Are You Going?"
+                    android:padding="10dp"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/dl"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="29dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/redlocation" />
+
+
+
+            </com.google.android.material.card.MaterialCardView>
 
 
             <LinearLayout
@@ -81,20 +137,20 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/carcard"
                     android:layout_marginStart="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     app:cardCornerRadius="60dp"
                     app:cardElevation="0dp">
 
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bgs">
+                    android:gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
 
                     <ImageView
                         android:id="@+id/car"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:src="@drawable/carl" />
 
                 </RelativeLayout>
@@ -102,21 +158,21 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/bikecard"
-                    android:layout_marginStart="80dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     app:cardCornerRadius="60dp"
                     app:cardElevation="0dp">
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bgs">
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
 
                         <ImageView
                             android:id="@+id/bike"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:src="@drawable/motorcycle" />
 
                     </RelativeLayout>
@@ -125,20 +181,20 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/autocard"
                     android:layout_marginStart="60dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     app:cardCornerRadius="60dp"
                     app:cardElevation="0dp">
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bgs">
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
 
                         <ImageView
                             android:id="@id/auto"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:src="@drawable/rickshaw" />
 
                     </RelativeLayout>

@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +17,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sawari"
         tools:targetApi="31">
+        <activity
+            android:name=".functions.PickupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".help.PaymentANDWalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".help.RefferalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".help.AccountandAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".help.ServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".help.RideANDBillingActivity"
+            android:exported="false" />
         <activity
             android:name=".help.TicketActivity"
             android:exported="false" />
@@ -77,6 +97,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Login.LoginActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQpea9jaFts6YKXjd2YfZUydIYjaPEGJM" />
     </application>
 
 </manifest>
